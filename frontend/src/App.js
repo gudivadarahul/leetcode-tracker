@@ -17,7 +17,7 @@ const App = () => {
       .post("/problems", newProblem)
       .then((response) => setProblems([...problems, response.data]))
       .catch((error) =>
-        console.error("There was an error adding the problem!", error)
+        console.error("There was an error adding the problem!", error),
       );
   };
 
